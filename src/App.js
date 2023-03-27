@@ -5,7 +5,7 @@ import Car from "./Car";
 import Sunrise from "./Sunrise";
 function App() {
   const fetcher = async () => {
-    const info = await fetch("http://localhost:3001/");
+    const info = await fetch("/");
     const info2 = await info.json();
     console.log(info2);
   };
