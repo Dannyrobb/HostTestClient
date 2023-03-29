@@ -6,6 +6,7 @@ import Sunrise from "./Sunrise";
 function App() {
   const fetcher = async () => {
     const info = await fetch("http://testserver-a6lu.onrender.com/");
+    console.log(info)
     const info2 = await info.json();
     console.log(info2);
   };
